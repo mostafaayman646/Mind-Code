@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Tau Protein" />
+  <title>Explore Tau Protein</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    /* Video Background Styling */
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Send the video to the back */
+    }
+
+    /* Text Styling */
+    h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      z-index: 1; /* Ensure it stays above the video */
+    }
+
+    /* Button Styling */
+    button {
+      padding: 15px 25px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      z-index: 1; /* Ensure it stays above the video */
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop>
+    <source src="brain.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Text and Button -->
+  <h1>Welcome to the Tau Protein Exploration Page!</h1>
+  <a href="https://alphafold.ebi.ac.uk/entry/P10636" target="_blank">
+    <button>Click here to explore Tau</button>
+  </a>
+</body>
+</html>

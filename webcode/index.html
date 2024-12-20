@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Code</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(-45deg, #1b4965, #62b6cb, #cae9ff, #5fa8d3); /* Background gradient */
+            background-size: 300% 300%;
+            animation: gradientAnimation 6s ease infinite;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Particle Effects */
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent */
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-20px) scale(1.1);
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .particle:nth-child(1) { top: 20%; left: 30%; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 40%; left: 50%; animation-delay: 1s; }
+        .particle:nth-child(3) { top: 70%; left: 80%; animation-delay: 2s; }
+        .particle:nth-child(4) { top: 60%; left: 20%; animation-delay: 3s; }
+        .particle:nth-child(5) { top: 10%; left: 70%; animation-delay: 4s; }
+
+        /* Logo Styling (at the top) */
+        .logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        /* Mind Code Text Styling with Faded Dark Blue Gradient */
+        .title {
+            font-size: 6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            background: linear-gradient(90deg, #1b4965, #103f89, #3a567d, #103f89, #1b4965);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradientAnimation 6s ease infinite;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Slight shadow for better visibility */
+        }
+
+        @keyframes textGradientAnimation {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 15px 40px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #103f89; /* Distinct blue color */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #082c61; /* Darker shade of blue for hover effect */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particle elements -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <!-- Logo at the Top -->
+    <img class="logo" src="logo.png" alt="Logo" />
+
+    <!-- Centered Text -->
+    <h1 class="title">Mind Code</h1>
+
+    <!-- Button Below -->
+    <button class="button" onclick="location.href='nextpage.html'">Enter</button>
+
+</body>
+</html>

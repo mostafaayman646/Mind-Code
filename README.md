@@ -1,9 +1,19 @@
-# **Mind Code: Early Diagnosis of Alzheimer’s Using PDEs and Machine Learning**
+# *PINN for solving PDE and Its application in Alzheimer’s disease**
 
-## **Overview**  
-Mind Code is a research project focused on advancing the early diagnosis of **Alzheimer’s disease** by integrating **partial differential equations (PDEs)**, **Physics-Informed Neural Networks (PINNs)**, and **symbolic regression**. This project explores tau protein diffusion in the brain, aiming to predict the reaction term in the reaction-diffusion PDE that governs its behavior.
-
+## **Overview** 
+Its a research project focused on advancing the early diagnosis of **Alzheimer’s disease** by integrating **partial differential equations (PDEs)**, **Physics-Informed Neural Networks (PINNs)**, and **symbolic regression**. This project explores tau protein diffusion in the brain, aiming to predict the reaction term in the reaction-diffusion PDE that governs its behavior.
 Through this interdisciplinary approach, we aim to contribute to **healthcare innovation** by providing tools for better understanding Alzheimer’s progression and enhancing diagnostic precision.
+
+The equation is given as:
+
+$$
+\frac{\partial c}{\partial t} = \nabla \cdot (D \cdot \nabla c) + f(c)
+$$
+
+Where:
+- \(c\): Concentration
+- \(D\): Diffusion coefficient (tensor or scalar)
+- \(f(c)\): Reaction term
 
 ---
 
@@ -59,7 +69,7 @@ Mind-Code/
    pip install -r requirements.txt
    ```
 
-3. Run the Jupyter notebooks:
+3. Run the result notebook:
    ```bash
    jupyter notebook
    ```

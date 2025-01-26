@@ -20,10 +20,6 @@ Through this interdisciplinary approach, we aim to contribute to **healthcare in
 ## **Repository Structure**
 ```
 Mind-Code/
-├── data/                 # Synthetic and real PET scan data
-├── notebooks/            # Jupyter notebooks for data preprocessing and training
-├── models/               # PINN and symbolic regression models
-├── simulations/          # COMSOL simulation files for tau protein diffusion
 ├── web_interface/        # Code for the dynamic webpage visualization
 ├── results/              # Generated images, graphs, and diffusion patterns
 ├── README.md             # Project description and instructions
@@ -33,19 +29,15 @@ Mind-Code/
 ---
 
 ## **How It Works**
-### 1. **Preprocessing**
-- **PET Scan Denoising**: Applied the **heat equation** to denoise PET scans before classification.
-- **Synthetic Data Generation**: Created synthetic data for training using four different reaction equations.
-
-### 2. **Training and Prediction**
+### 1. **Training and Prediction**
 - Trained **PINNs** to predict the unknown reaction term in the reaction-diffusion PDE.
 - Used **symbolic regression** to derive interpretable reaction equations.
 
-### 3. **Simulation**
+### 2. **Simulation**
 - Simulated tau protein diffusion in a 2D brain-like shape using **COMSOL**.
 - Applied the predicted reaction term to visualize diffusion patterns.
 
-### 4. **Visualization**
+### 3. **Visualization**
 - Developed an interactive webpage to dynamically present results and insights.
 
 ---

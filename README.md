@@ -23,18 +23,7 @@ Where:
 - 🔬 **Symbolic Regression**: Discovered interpretable mathematical expressions for the reaction term.  
 - 📊 **Visualization**: Simulated and visualized tau protein diffusion patterns in a 2D brain-like geometry.  
 - 🛠️ **Web Interface**: Dynamic webpage to interactively present diffusion results and project insights.  
-- 🧪 **Data Integration**: Used synthetic training data and PET scan data from the **ADNI** database for parameter extraction.  
-
----
-
-## **Repository Structure**
-```
-Mind-Code/
-├── web_interface/        # Code for the dynamic webpage visualization
-├── results/              # Generated images, graphs, and diffusion patterns
-├── README.md             # Project description and instructions
-└── LICENSE               # License for the repository
-```
+- 🧪 **Data Integration**: Used synthetic training data and PET scan data from the **ADNI** database for parameter extraction.
 
 ---
 
@@ -87,11 +76,7 @@ Mind-Code/
 - Discovered reaction terms that match synthetic ground truth equations with high accuracy.
 - Demonstrated diffusion patterns of tau protein in a 2D brain model.
 - Improved PET scan quality using the heat equation for denoising.
-
-### Visualizations
-![Tau Diffusion](results/tau_diffusion.png)  
-*Figure: Tau protein diffusion patterns in a 2D brain-like shape.*
-
+![Tau Diffusion](results.png)
 ---
 
 ## **Future Work**
@@ -101,24 +86,8 @@ Mind-Code/
 
 ---
 
-## **Contributors**
-- **Your Name** ([LinkedIn](https://linkedin.com/in/your-profile)) – Project Lead
-- **Team Members (if applicable)**  
-
----
-
 ## **Acknowledgments**
 - **ADNI** for providing PET scan data.  
-- **COMSOL** for simulation tools.  
-- Inspiration from [Paper Name/Authors] (add a link if applicable).  
+- **COMSOL** for simulation tools.
 
 ---
-
-## **License**
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **Contact**
-Feel free to reach out for collaboration or questions:  
-📧 Email: your.email@example.com  

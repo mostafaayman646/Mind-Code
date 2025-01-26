@@ -1,4 +1,4 @@
-# *PINN for solving PDE and Its application in Alzheimer’s disease**
+# *PINN for solving PDE and Its application in Alzheimer’s disease*
 
 ## **Overview** 
 Its a research project focused on advancing the early diagnosis of **Alzheimer’s disease** by integrating **partial differential equations (PDEs)**, **Physics-Informed Neural Networks (PINNs)**, and **symbolic regression**. This project explores tau protein diffusion in the brain, aiming to predict the reaction term in the reaction-diffusion PDE that governs its behavior.
